@@ -1,0 +1,6 @@
+quantity = int(input())
+print('   _~_    '*quantity)
+print('  (o o)   '*quantity)
+print(' /  V  \\  '*quantity)
+print('/(  _  )\\ '*quantity)
+print('  ^^ ^^  '*quantity)

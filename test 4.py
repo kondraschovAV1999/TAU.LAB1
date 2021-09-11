@@ -1,0 +1,10 @@
+x1 = int(input())
+y1 = int(input())
+x2 = int(input())
+y2 = int(input())
+if ((x1 > 0) and (x2 < 0)) or ((x1 < 0) and (x2 > 0)):
+    print('NO')
+elif ((y1 > 0) and (y2 < 0)) or ((y1 < 0) and (y2 > 0)):
+    print('NO')
+else:
+    print('YES')

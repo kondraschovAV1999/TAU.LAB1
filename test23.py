@@ -1,0 +1,15 @@
+inFile = open('input.txt', 'r', encoding='utf8')
+N, M = map(int, inFile.readline().split())
+annColors = set()
+borisColors = set()
+for i in range(N):
+    annColors.add(int(inFile.readline()))
+for j in range(M):
+    borisColors.add(int(inFile.readline()))
+print(len(annColors & borisColors))
+print(*sorted(list(annColors & borisColors)))
+print(len(annColors - (annColors & borisColors)))
+print(*sorted(list(annColors - (annColors & borisColors))))
+print(len((borisColors - (annColors & borisColors))))
+print(*sorted(list(borisColors - (annColors & borisColors))))
+inFile.close()
